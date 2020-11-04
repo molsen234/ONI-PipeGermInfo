@@ -7,8 +7,8 @@
     <ProjectGuid>{D19FBEB0-EDF5-4B42-B235-19B1ABABD3D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ONI_GermInfo</RootNamespace>
-    <AssemblyName>ONI_GermInfo</AssemblyName>
+    <RootNamespace>ONI_PipeGermInfo</RootNamespace>
+    <AssemblyName>ONI_PipeGermInfo</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -55,8 +55,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ONI_GermInfo.cs" />
+    <Compile Include="ONI_PipeGermInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "%25HOMEPATH%25\Documents\Klei\OxygenNotIncluded\mods\local\$(ProjectName)"
+copy "$(TargetPath)" "%25HOMEPATH%25\Documents\Klei\OxygenNotIncluded\mods\local\$(ProjectName)"
+IF EXIST  "$(TargetDir)*.json" ( copy "$(TargetDir)*.json" "%25HOMEPATH%25\Documents\Klei\OxygenNotIncluded\mods\local\$(ProjectName)" )
+IF EXIST  "$(TargetDir)*.txt" ( copy "$(TargetDir)*.txt" "%25HOMEPATH%25\Documents\Klei\OxygenNotIncluded\mods\local\$(ProjectName)" )</PostBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ONI_GermInfo")]
+[assembly: AssemblyTitle("ONI_PipeGermInfo")]
 [assembly: AssemblyDescription("Adds germcount to pipe content info in liquid and gas overlays.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ONI_GermInfo")]
+[assembly: AssemblyProduct("ONI_PipeGermInfo")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
