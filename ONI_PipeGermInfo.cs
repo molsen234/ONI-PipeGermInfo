@@ -8,7 +8,7 @@ using STRINGS;
 using Harmony;
 
 
-namespace ONI_GermInfo
+namespace ONI_PipeGermInfo
 {
     [HarmonyPatch(typeof(BuildingStatusItems), "CreateStatusItems")]
     class AddPipeGermInfo
