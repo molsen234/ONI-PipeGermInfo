@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using Database;
 using STRINGS;
-using Harmony;
+using HarmonyLib;
 
 
 namespace ONI_PipeGermInfo
